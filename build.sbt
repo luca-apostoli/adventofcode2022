@@ -10,6 +10,7 @@ lazy val root = (project in file("."))
       "dev.zio" %% "zio" % "2.0.3",
       "dev.zio" %% "zio-streams" % "2.0.3",
       "org.scala-lang.modules" %% "scala-parser-combinators" % "2.1.1",
+      "com.github.pathikrit" %% "better-files" % "3.9.1",
       "dev.zio" %% "zio-test" % "2.0.3" % Test
     ),
     testFrameworks += new TestFramework("zio.test.sbt.ZTestFramework")
