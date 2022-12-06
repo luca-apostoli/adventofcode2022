@@ -34,6 +34,10 @@ object Utils {
     )
   }
 
+  def row(filename: String): ZStream[Any, Throwable, String] = {
+    readFile(filename, _.getLines().take(1).flatMap(_.split("")))
+  }
+
 
 
 }
