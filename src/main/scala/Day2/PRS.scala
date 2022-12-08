@@ -1,6 +1,6 @@
 package Day2
 
-import Day2.Results.{Draw, Lost, ResultsVal, Won}
+import Day2.Results.{Draw, Lost, Won}
 
 object PRS extends Enumeration {
   protected case class PRSVal(value: Int, p1: Char, p2: Char) extends super.Val {
