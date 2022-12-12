@@ -1,6 +1,5 @@
 package Day10
 
-
 import Utils.Utils.lines
 import zio.Console.printLine
 import zio.stream.ZSink

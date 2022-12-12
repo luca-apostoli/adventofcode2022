@@ -1,12 +1,10 @@
 package Utils
 
+import better.files.File
 import zio.ZIO
 import zio.stream.ZStream
 
-
-import java.nio.charset.StandardCharsets
 import scala.io.BufferedSource
-import better.files.File
 
 object Utils {
 
@@ -38,6 +36,8 @@ object Utils {
     readFile(filename, _.getLines().take(1).flatMap(_.split("")))
   }
 
-
+  def iterate(i: List[Int]): ZStream[Any, Throwable, Int] = {
+    ZStream.fromIterator(i.iterator)
+  }
 
 }
